@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Alipay-Payment </title>
+  <link rel='stylesheet' href="bootstrap.min.css">
+  <link rel='stylesheet' href="button.js">
+<link rel="stylesheet" href="button.css">
+<script type="text/javascript" src="button.js">
+
+</script>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="row mx-0 pt-5 d-flex justify-content-center">
+  <div class="col-xs-4 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+    <div class="card shadow-lg">
+      <div class="card-header card-header-divider text-center pt-4"> <img src="alipay1.png" class="img-fluid" style="max-height: 42px;" width="205" alt=""><br>
+      <img src="qr.jpg" style="max-width: 190px;" alt=""> </div>
+      <div class="card-body px-0">
+        <p class="text-center"><small><strong>Total 39元</strong></small></p>
+        <p class="text-muted text-center">扫描QR码并为产品付款 <br>
+          点击按钮检查付款<br>
+
+          检查付款后将开始下载游戏<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- button  -->
+<h1>支票付款</h1>
+<a href="https://bit.ly/324rah0">
+<button href="https://bit.ly/324rah0" data-label="check"> check</button>
+</a>
+<script type="text/javascript">
+var loading = function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  e.target.classList.add("loading");
+  e.target.setAttribute("disabled", "disabled");
+  setTimeout(function () {
+    e.target.classList.remove("loading");
+    e.target.removeAttribute("disabled");
+  }, 1500);
+};
+
+var btns = document.querySelectorAll(  "button");
+for (var i = btns.length - 1; i >= 0; i--) {
+  btns[i].addEventListener( href="https://bit.ly/324rah0" "click", loading);
+}
+</script>
+
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+
+
+</body>
+</html>

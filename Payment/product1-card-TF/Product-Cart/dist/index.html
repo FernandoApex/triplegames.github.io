@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://img1.wsimg.com/ux/1.3.9-brand/css/uxcore.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+</head>
+<body class="ux-app">
+<div class="container">
+  <div class="cart">
+    <div class="basket col-md-6 col-md-offset-1">
+      <div class="product ux-card">
+        <img src="https://img1.wsimg.com/fos/react/sprite.svg#domains" height="32" width="32" />
+        <span class="title"><a href="/product/{id}">first access</a></span>
+        <span class="price">
+          元4.99
+        </span>
+        <span class="tier">.com</span>
+        <span class="term">1 year</span>
+        <span class="attr">Privacy: ON</span>
+        <span class="renews"></span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+      <div class="product ux-card">
+        <img src="https://img1.wsimg.com/fos/react/sprite.svg#website-builder" height="32" width="32" />
+        <span class="title"><a href="/product/{id}">Website </a></span>
+        <span class="price">元0.00</span>
+        <span class="tier">Personal</span>
+        <span class="term">12 months</span>
+        <span class="renews"></span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+      <div class="product ux-card">
+        <img src="https://img1.wsimg.com/fos/react/sprite.svg#get-found" height="32" width="32" />
+        <span class="title"><a href="/product/{id}">Get Found</a></span>
+        <span class="price"><strike></strike>$0</span>
+        <span class="tier">Essential</span>
+        <span class="term">12 months</span>
+        <span class="renews"></span>
+        <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button>
+      </div>
+    </div>
+    <div class="summary col-md-4">
+      <dl class="subtotal">
+        <dt>Subtotal</dt>
+        <dd>元38.90</dd>
+        <dt><a href="/taxes">Estimated Taxes & Fees</a></dt>
+        <dd>元0.10</dd>
+      </dl>
+      <dl class="total">
+        <dt>Total</dt>
+        <dd>元39</dd>
+      </dl>
+      <dl class="support">
+        <dt><a href="">Total savings</a></dt>
+        <dd>元6.00</dd>
+        <dt><a href=""> </a></dt>
+      </dl>
+      <div class="payment">
+        <a href="payment/add">Add</a>
+        <h4 class="headline-primary">Payment</h3>
+        <div class="ux-card">
+          <a href="/payment/{id}"><img src="alipay-logo-1e.png" height="32" width="50" /> payment method</a>
+        </div>
+      </div>
+      <div class="terms">
+        <h4 class="headline-primary">Terms & Conditions</h3>
+        <p class="review">Clicking on "I Agree" means you agree to payment <a href="terms/show">Terms & Conditions</a>.</p>
+        <p class="review"><strong>Products automatically</strong> renew until cancelled, and are billed to your payment method on file. Turn off auto-renew in your GoDaddy account.</p>
+        <p class="agreed">I've read and agreed to the <a href="terms/show">Term & Conditions</a>.</p>
+        <button type="button" class="btn btn-purchase review">I Agree</button>
+      </div>
+      <div class="complete">
+        <button type="button" disabled="disabled" class="btn btn-purchase"><a   href="Alipay.html">Complete Purchase</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="controls">
+  <label>Controls</label><br>
+  <ul class="nav nav-stacked">
+    <li><button id="undelete">Undelete All</button></li>
+    <li><button id="changePrices">$0.99 .COM first access</button></li>
+  </ul>
+</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
